@@ -10,10 +10,9 @@ jobs:
 
           echo >> /home/runner/.bashrc
           echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/runner/.bashrc
-          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
       - name: Install postgresql@16
-        run: brew install postgresql@16
+        run: /home/linuxbrew/.linuxbrew/bin/brew install postgresql@16
 
       - name: Check pg_dump version
-        run: pg_dump --version
+        run: /home/linuxbrew/.linuxbrew/bin/pg_dump --version
