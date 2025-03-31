@@ -15,4 +15,4 @@ jobs:
         run: /home/linuxbrew/.linuxbrew/bin/brew install postgresql@16
 
       - name: Check pg_dump version
-        run: /home/linuxbrew/.linuxbrew/bin/pg_dump --version
+        run: /home/linuxbrew/.linuxbrew/opt/postgresql@16/bin/pg_dump --version
