@@ -6,3 +6,9 @@ jobs:
     steps:
       - name: Install Linuxbrew
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+      - name: Install postgresql@16
+        run: brew install postgresql@16
+
+      - name: Check pg_dump version
+        run: pg_dump --version
