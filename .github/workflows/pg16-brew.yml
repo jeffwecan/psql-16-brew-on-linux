@@ -1,0 +1,8 @@
+name: PostgreSQL via brew-on-linux
+on: [push]
+jobs:
+  pg16-via-brew:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Install Linuxbrew
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
